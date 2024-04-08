@@ -28,7 +28,6 @@ RUN flutter doctor -v
 RUN flutter precache
 
 # Configura o volume do projeto
-VOLUME ["/app"]
 WORKDIR /app
 
 # Mantém o container rodando
