@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "557691228992",
+    "project_id": "site-engesep-kmvol8",
+    "storage_bucket": "site-engesep-kmvol8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557691228992:android:ae24d736328a2c809c60a5",
+        "android_client_info": {
+          "package_name": "engesep.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATGSGK7s5-FT5GYDfXe6IiS1y8KKwtQp8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
