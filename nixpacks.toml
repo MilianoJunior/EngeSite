@@ -1,7 +1,8 @@
-[phases.install]
-cmds = ["sudo apt-get update -y && sudo apt-get upgrade -y",
-    "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.19.5-stable.tar.xz",
-    "tar xf flutter_linux_3.19.5-stable.tar.xz",
-    "export PATH=\"$PATH:`pwd`/flutter/bin\"",
-    "flutter doctor",
-]
+[start]
+cmd = "sudo apt-get update -y && sudo apt-get upgrade -y"
+cmd = "RUN curl -O https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.19.5-stable.tar.xz"
+cmd = "RUN tar xf flutter_linux_3.19.5-stable.tar.xz"
+cmd = "RUN rm flutter_linux_3.19.5-stable.tar.xz"
+cmd = "export PATH=\"$PATH:`pwd`/flutter/bin\""
+
+
