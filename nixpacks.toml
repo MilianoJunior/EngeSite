@@ -1,2 +1,7 @@
 [phases.install]
-cmds = ["dart compile exec bin/{pubspec}.dart"]
+cmds = ["sudo apt-get update -y && sudo apt-get upgrade -y",
+    "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.19.5-stable.tar.xz",
+    "tar xf flutter_linux_3.19.5-stable.tar.xz",
+    "export PATH=\"$PATH:`pwd`/flutter/bin\"",
+    "flutter doctor",
+]
