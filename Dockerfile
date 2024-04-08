@@ -17,8 +17,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Define o diretório de trabalho
 WORKDIR /opt
 
+
 # Baixa o Flutter SDK
-RUN git clone https://github.com/flutter/flutter.git -b stable
+RUN git -c http.sslVerify=false clone https://github.com/flutter/flutter.git -b stable
+
 
 # Adiciona o Flutter ao PATH
 ENV PATH="/opt/flutter/bin:/opt/flutter/bin/cache/dart-sdk/bin:${PATH}"
